@@ -76,9 +76,9 @@ Svix হলো একটি Webhook Security System, যা:
 
 # কিভাবে এটা কাজ করে?
 
-✔ Clerk ইভেন্ট পাঠায় → সার্ভার গ্রহণ করে
-✔ Clerk ইভেন্টকে Svix signature দিয়ে সাইন করে
-✔ Express raw body এনেছে (verify করার জন্য প্রয়োজন)
-✔ Svix verify করে দেখে signature ঠিক আছে কিনা
-✔ ঠিক থাকলে event handler চলে
-✔ ভুল হলে “Invalid signature” দেখায়
+- Clerk ইভেন্ট পাঠায় → সার্ভার গ্রহণ করে
+- Clerk ইভেন্টকে Svix signature দিয়ে সাইন করে
+- Express raw body এনেছে (verify করার জন্য প্রয়োজন)
+- Svix verify করে দেখে signature ঠিক আছে কিনা
+- ঠিক থাকলে event handler চলে
+- ভুল হলে “Invalid signature” দেখায়
